@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Varela+Round&display=swap");
+
+:root {
+  --primary-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Varela", sans-serif;
+  color: var(--primary-color);
+  /*line-height: 1.6;*/
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  color: #333;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #333;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #333 solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* Greet */
+
+.greet {
+  /*height: 400px;*/
+  position: relative;
+  padding-top: 10px;
+  height: 100vh;
+}
+
+.greet h1 {
+  font-size: 130px;
+  font-weight: 700;
+  font-family: "Dongle";
+  margin-bottom: 0;
+}
+
+.greet p {
+  font-family: "Dongle";
+  font-size: 40px;
+  /*font-size: 3vw;*/
+  color: #8a8a8a;
+  font-weight: 300;
+  margin-top: 0;
+  line-height: 40%;
+}
+
+.greet .grid {
+  overflow: visible;
+}
+
+.greet img {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Languages 
+.languages{
+  padding: 0 40px;
+}
+*/
+
+.languages-title{
+  font-size: 100px;
+  font-weight: 400;
+  font-family: "Dongle";
+  margin-bottom: 30;
+  text-align: center;
+}
+
+.sensei-jap{
+  font-size: 15px;
+}
+
+.Sensei-img{
+  margin-bottom: 100px;
+}
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+
+.contact{
+  background-color: #121212;
+}
+
+.flexContact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title{
+  font-size: 70px;
+  font-weight: 400;
+  font-family: "Dongle";
+  margin-bottom: 30;
+  color:#F2F2F2;
+  text-align: center;
+}
+
+.contact-detail{
+  font-family: "Dongle";
+  color: #F2F2F2;
+  font-size: 30px;
+}
+
+.info{
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.containerImg {
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Tablets and under */
+@media (max-width: 850px) {
+  .grid,
+  .greet .grid {
+    /*grid-template-columns: 1fr;*/
+  }
+  .greet h1 {
+    font-size: 100px;
+  }
+
+  .greet p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 665px) {
+  .greet h1 {
+    font-size: 80px;
+  }
+
+  .greet p {
+    font-size: 20px;
+  }
+}
+/* Mobile */
+@media (max-width: 485px) {
+  .grid,
+  .greet .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .greet-text {
+    justify-self: center;
+  }
+  .navbar {
+    height: 110px;
+  }
+
+  nav {
+    border-radius:50%;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+}
