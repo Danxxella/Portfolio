@@ -138,6 +138,12 @@ img {
   margin-bottom: 100px;
 }
 
+.jobplace-img{
+  margin-bottom: 150px;
+  width: 60%;
+  height: 60%;
+}
+
 .languages .flex {
   flex-wrap: wrap;
 }
